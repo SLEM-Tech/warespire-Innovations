@@ -108,10 +108,9 @@ const Header = () => {
         {/* Desktop Header */}
         <div className="hidden slg:grid grid-cols-3 items-center justify-stretch w-full py-3 max-w-[1350px] mx-auto">
           {/* 1. Logo */}
-          <div className="col-span-1 flex items-center gap-20 ">
-            <div className=" text-white ">
-              {/* <LogoImage className='!w-[35px] cursor-pointer brightness-200' /> */}
-              Logo
+          <div className="col-span-1 flex items-center gap-10 ">
+            <div className=" ">
+              <Picture className='w-[150px]' src="/images/logo.png" alt='logo' />
             </div>
 
             <div className="">
@@ -294,7 +293,7 @@ const Header = () => {
                 className="text-2xl text-white"
                 onClick={() => setDrawerVisible(true)}
               />
-              <LogoImage className="!w-[30px] brightness-200" />
+              <LogoImage className="!w-[100px] brightness-200" />
             </div>
             <div onClick={onOpenCart} className="relative">
               <FiShoppingBag className="text-2xl text-white" />

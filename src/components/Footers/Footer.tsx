@@ -16,6 +16,7 @@ import {
 	BiLogoTiktok,
 	BiLogoWhatsapp,
 } from "@node_modules/react-icons/bi";
+import Picture from "../picture/Picture";
 
 interface footerDataProps {
 	title: string;
@@ -129,7 +130,13 @@ const Footer = () => {
         <section className="flex justify-center gap-16 mt-2">
           <div className="flex flex-col gap-4 w-[80%]">
             {/* <LogoImage className='!w-[20px] lg:!w-[30px] rounded-sm' /> */}
-            <p className="w-[20px] lg:!w-[30px] rounded-sm text-white">Logo</p>
+            <p className="">
+              <Picture
+                className="w-[150px]"
+                src="/images/logo.png"
+                alt="logo"
+              />
+            </p>
 
             {/* <div className="flex gap-1">
               {footer1socialMediaIcons.map((item, index) => (
@@ -178,8 +185,12 @@ const Footer = () => {
           <div className="flex w-full justify-between items-end gap-4">
             <div className="">
               {/* <LogoImage className="!w-[30px] lg:!w-[30px]" /> */}
-              <p className="w-[20px] lg:!w-[30px] rounded-sm text-white">
-                Logo
+              <p className="">
+                <Picture
+                  className="w-[150px]"
+                  src="/images/logo.png"
+                  alt="logo"
+                />
               </p>
             </div>
 
