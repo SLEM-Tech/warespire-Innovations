@@ -32,7 +32,7 @@ const page = () => {
       </div>
       <MachineMaintenance />
 	  {/* <GetStarted/> */}
-      <AppMenu />
+      {/* <AppMenu /> */}
     </AppLayout>
   );
 };

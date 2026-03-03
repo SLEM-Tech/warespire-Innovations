@@ -125,10 +125,10 @@ const Footer = () => {
 	const staggerDelay = 0.2;
 
 	return (
-    <footer className=" bg-black w-full py-2 flex flex-col item-center">
+    <footer className=" bg-black w-full py-2 flex flex-col item-center mb-[-100px]">
       <div className="mx-auto max-w-[1350px] w-full hidden slg:block">
         <section className="flex justify-center gap-16 mt-2">
-          <div className="flex flex-col gap-4 w-[80%]">
+          <div className="flex flex-col gap-6 w-[80%]">
             {/* <LogoImage className='!w-[20px] lg:!w-[30px] rounded-sm' /> */}
             <p className="">
               <Picture
@@ -138,7 +138,7 @@ const Footer = () => {
               />
             </p>
 
-            {/* <div className="flex gap-1">
+            <div className="flex gap-4">
               {footer1socialMediaIcons.map((item, index) => (
                 <motion.a
                   href={item.link}
@@ -151,7 +151,7 @@ const Footer = () => {
                   {item.icon}
                 </motion.a>
               ))}
-            </div> */}
+            </div>
           </div>
 
           <div className="flex gap-4 w-full pt-3">
@@ -180,7 +180,7 @@ const Footer = () => {
         <hr className="w-full bg-primary-400/40" />
       </div> */}
 
-      <div className="mx-auto flex w-full flex-col slg:hidden mb-4">
+      <div className="mx-auto flex w-full flex-col slg:hidden">
         <section className="flex flex-col justify-between gap-1 sm:gap-6 mt-2 px-2 xs:px-6 sm:px-10">
           <div className="flex w-full justify-between items-end gap-4">
             <div className="">
@@ -194,7 +194,7 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* <div className="flex gap-1 h-fit">
+            <div className="flex gap-1 h-fit">
               {footer1socialMediaIcons.map((item, index) => (
                 <motion.a
                   href={item.link}
@@ -207,7 +207,7 @@ const Footer = () => {
                   {item.icon}
                 </motion.a>
               ))}
-            </div> */}
+            </div>
           </div>
 
           <div className="flex lg:gap-8 w-full pt-3">
@@ -232,7 +232,7 @@ const Footer = () => {
         </section>
       </div>
 
-      <div className="mx-auto max-w-[1156px]">
+      <div className="mx-auto max-w-[1350px]">
         <div className="flex items-center justify-center py-2">
           <div className="text-white sm:font-mono text-xs leading-[1.2]">
             Copyright&nbsp;@ {currentYear}&nbsp;{CompanyName} Alright Reserved.
