@@ -85,7 +85,7 @@ const RelatedProductsSection = ({
 							) : (
 								<>
 									{CategoryProducts?.map((product) => (
-										<>
+										<div key={product?.id} className='w-full slg:w-[300px] shrink-0'>
 											<ProductCard2
 												key={product?.id}
 												id={product?.id}
@@ -94,7 +94,7 @@ const RelatedProductsSection = ({
 												newAmount={product?.price}
 												description={product?.name}
 											/>
-										</>
+										</div>
 									))}
 								</>
 							)}
